@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+nav{
+  display: flex;
+  padding: 1% 2%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  
+}
+nav img{
+  width: 50px;
+}
+.nav-links{
+  flex: 1;
+  text-align: center;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  text-transform: uppercase;
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight:500 ;
+}
+/* .nav-links ul li::after{
+  content: '';
+  height: 2px;
+  width: 0%;
+  background: #fffdfd;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+} */
+
+.nav-links ul li a:hover{
+    color: black;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.nav-links ul li .active{
+  color: black;
+  background-color: #fff;
+  padding: 0 5px;
+  border-radius: 15px;
+}
+nav .f{
+  display: none;
+}
+.fa{
+  font-size: 18px;
+}
+@media(max-width:880px){
+  .nav-links ul li{
+      display: block;
+  }
+  .nav-links{
+      position: fixed;
+      background-color: black;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+  }
+  nav .fa-solid{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  .nav-links ul{
+      padding: 30px;
+  }
+  .nav-links ul li:hover::after{
+      width: 0%;
+  }
+}
+
+
+
+
+
+ 
+ 
+  .abhome{
+    background-color: #fff;
+    padding-top: 30px;
+  }
+  .abhometexth{
+    color: navy;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+  .abhometext{
+    color: black;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .abhomeimg{
+    border: 1px solid;
+  }
+  .abhome1{
+    padding-top: 60px;
+  }
+
+  .abbody2{
+    background-color: #F5F5DC;
+  }
+  .abbody2para{
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+    
+  }
+  .abbody2img{
+    height: 300px;
+    width: 700px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+    
+  }
+  .abbody2head{
+    text-align: center;
+    color: navy;
+    font-weight: bold;
+    padding-top: 40PX;
+    padding-bottom: 50px;
+  } 
+  .abbody3{
+    background-color:#fff ;
+  }
+  .abbody3text{
+    color: black;
+  }
+
+  footer{
+    background-color: black;
+    color: goldenrod;
+}
+.footer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footerlogo{
+    height: 100px;
+    
+}
+footer div h6{
+    text-align: center;
+    padding-top: 10PX;
+}
+footer div p{
+    text-align: center;
+}
+.f{
+  color: goldenrod;
+   }
+
+.fi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 15PX;
+}

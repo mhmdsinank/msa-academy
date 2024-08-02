@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./contact.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="fixed-top">
+        <a><img src="../public/msa_logo_png-removebg-preview.png" alt="" class="img-fluid"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="f fa-solid fa-xmark" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./programs.html">Programs</a></li>
+                <li><a class="active" href="#">Contact</a></li>
+            </ul>
+        </div>
+        <i class="f fa-solid fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row con">
+            <div class="col-lg-4 col-md-6 col-12 contacttext">
+                <h2 style="color: navy;">JOIN US TODAY</h2>
+                <p>We are ready to start the journey with you. Come check us out!</p>
+                <p>MSA Martial Arts And Sports Academy will positively change you and your child. Are you ready to take the next step towards a more healthier, confident, dedicated life?</p>
+                <p><i class="fa-solid fa-phone"></i> +91 96 33 221 872</p>
+                <p><i class="fa-solid fa-location-dot"></i> Kalatharangini Building,
+                    Near Kalamandalam.
+                    Cheruthuruthy,Thrissur,
+                    Kerala-679531<br>
+                    <i class="fa-solid fa-envelope"></i> msakerala@gmail.com</p>
+                    
+
+                <form action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateform()" id="myform">
+                    
+                    <input type="hidden" name="access_key" value="7c3d86d4-b418-4121-a070-4bae2e3fb4af">
+
+                    <label for="name">NAME</label><br>
+                    <input type="text" name="name" id="name"><br>
+                    <span id="nameerror" class="error"></span><br>
+                    <label for="age">AGE</label><br>
+                    <input type="text" name="age" id="age"><br>
+                    <span id="ageerror" class="error"></span><br>
+                    <label for="email">E-MAIL</label><br>
+                    <input type="email" name="email" id="email"><br>
+                    <span id="emailerror" class="error"></span><br>
+                    <label for="phone">PHONE NUMBER</label><br>
+                    <input type="text" name="phone" id="phone"><br>
+                    <span id="pherror" class="error"></span>
+                    <label for="programe">WHICH PROGRAM ARE YOU INTERESTED IN? </label><br>
+                    <select id="programe" required>
+                        <option value=""></option>
+                        <option value="Karate">Karate</option>
+                        <option value="Kung-Fu">Kung-Fu</option>
+                        <option value="Archery">Archery</option>
+                        <option value="Boxing">Boxing</option>
+                        <option value="Kalaripayattu">Kalaripayattu</option>
+                        <option value="Roller skating">Roller skating</option>
+                    </select><br>
+                    
+                    <button type="submit" class="btnsubmit">SUBMIT</button>
+                </form>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12 container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9402667539125!2d76.27388707326335!3d10.739087259884998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7dcb52f0f302f%3A0x4936e4776a18cc01!2sKalatharangini%20Kathakali%20School!5e0!3m2!1sen!2sin!4v1710143193899!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </div>
+        </div>
+    </div>
+        
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 footer">
+                        <img class="img-fluid footerlogo" src="../public/msa_logo_png-removebg-preview.png" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h6>MARTIAL ARTS SPORTS ACADEMY</h6>
+                        <p > Cheruthuruthy <br>  Thrissur<br>
+                        <div class="fi">
+                        <span><a href="https://www.facebook.com/profile.php?id=100063921405688"><i class="f fa-brands fa-facebook"></i></a></span>
+                        <span><a href="https://www.youtube.com/@rafeekabz"><i class="f fa-brands fa-youtube"></i></a></span>
+                        <span><a href="https://www.instagram.com/msa_kerala?igsh=MTkzYm1iajNxaWNsMw=="><i class="f fa-brands fa-instagram"></i></a></span>
+                        </div>
+                </div>
+                
+            </div>
+        </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>
